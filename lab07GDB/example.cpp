@@ -30,10 +30,10 @@ int main(void)
    example * exp = &ex2;
    ex2.other = &ex;
 
-   printf("%d\n", exp->a);
-
    /* bad program is about to die */
    kaboom();
+
+   printf("%d\n", exp->a);
 
    return 0;
 }
